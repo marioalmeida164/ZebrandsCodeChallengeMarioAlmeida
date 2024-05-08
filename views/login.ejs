@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mario Almeida's Coding Challenge</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+ 
+<body>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="/">Mario Almeida's Coding Challenge</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Log In</a></li>
+        </ul>
+    </div>
+</div>
+ 
+<div class="container">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    .signup-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .signup-container h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+
+    .form-group button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .form-group button:hover {
+        background-color: #0056b3;
+    }
+    .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+</style>
+</head>
+<div class="signup-container">
+    <h2>Log-In</h2>
+    <form method="post" action="/api/login">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <button id="loginBtn" type="submit">Log In</button>
+        </div>
+        <li>Don't have an account? <a href="/GuestProducts">Guest Access</a></li>
+    </form>
+</div>
+</div>
+</body>
+</html>

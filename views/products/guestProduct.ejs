@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mario Almeida's Coding Challenge</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+ 
+<body>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="/">Mario Almeida's Coding Challenge</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="/login">Log In</a></li>
+        </ul>
+    </div>
+</div> 
+<div class="container">
+    <body>
+        <h1>Products</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Brand</th>
+                <th>SKU</th>
+                <th>Price</th>
+            </tr>
+            <% data.forEach(doc => { %>
+                <tr>
+                    <td><%= doc.name %></td>
+                    <td><%= doc.description %></td>
+                    <td><%= doc.brand %></td>
+                    <td><%= doc.sku %></td>
+                    <td><%= doc.price %></td>
+                </tr>
+            <% }); %>
+        </table>
+    </div>        
+</body>
+</html>
